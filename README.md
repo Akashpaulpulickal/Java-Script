@@ -1,2 +1,3 @@
 # Java-Script
-Python is a versatile programming language known for its readability and ease of use. It's widely used for various tasks, from web development and data science to automation and machine learning, making it a valuable tool for developers on GitHub.
+JavaScript is a versatile programming language primarily used for creating interactive web pages. On GitHub, you can find a vast repository of JavaScript projects, from small scripts to large-scale frameworks, making it an invaluable resource for learning, collaboration, and open-source development.
+
