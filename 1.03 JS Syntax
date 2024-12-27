@@ -1,0 +1,5 @@
+// JS Syntax - Example
+let x = 5;  // Variable declaration
+let y = 6;  // Variable declaration
+let z = x + y;  // Expression
+console.log(z);  // Print the result to the console
