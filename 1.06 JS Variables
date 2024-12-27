@@ -1,0 +1,8 @@
+// JS Variables - Example
+var x = 5; // Using var
+let y = 10; // Using let
+const z = 15; // Using const
+
+console.log(x); // Print the value of x
+console.log(y); // Print the value of y
+console.log(z); // Print the value of z
