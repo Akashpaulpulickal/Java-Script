@@ -1,0 +1,7 @@
+// JS Let - Example
+let x = 10; // Declare x with let
+{
+  let x = 2; // x is 2 inside this block
+  console.log(x); // Print 2
+}
+console.log(x); // Print 10
