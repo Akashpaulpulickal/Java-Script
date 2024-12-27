@@ -1,0 +1,4 @@
+// JS Const - Example
+const pi = 3.14; // Declare a constant
+console.log(pi); // Print the value of pi
+// pi = 3.1416; // This will cause an error
