@@ -1,0 +1,5 @@
+// JS Output - Example
+document.getElementById("demo").innerHTML = "Hello, World!"; // Write into an HTML element
+document.write("This is JavaScript!"); // Write into the HTML output
+window.alert("Hello, World!"); // Display an alert box
+console.log("Hello, World!"); // Print to the browser console
