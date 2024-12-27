@@ -1,0 +1,58 @@
+// JavaScript Scope
+
+// Global Scope
+let globalVar = "I am a global variable";
+
+function globalScopeExample() {
+  console.log(globalVar); // Output: I am a global variable
+}
+
+globalScopeExample();
+
+// Function Scope
+function functionScopeExample() {
+  let functionVar = "I am a function variable";
+  console.log(functionVar); // Output: I am a function variable
+}
+
+functionScopeExample();
+// console.log(functionVar); // Error: functionVar is not defined
+
+// Block Scope with let and const
+function blockScopeExample() {
+  if (true) {
+    let blockVar = "I am a block variable";
+    const blockConst = "I am a block constant";
+    console.log(blockVar); // Output: I am a block variable
+    console.log(blockConst); // Output: I am a block constant
+  }
+  // console.log(blockVar); // Error: blockVar is not defined
+  // console.log(blockConst); // Error: blockConst is not defined
+}
+
+blockScopeExample();
+
+// Block Scope with var (var is function-scoped, not block-scoped)
+function varScopeExample() {
+  if (true) {
+    var varVar = "I am a var variable";
+    console.log(varVar); // Output: I am a var variable
+  }
+  console.log(varVar); // Output: I am a var variable
+}
+
+varScopeExample();
+
+// Lexical Scope (Closures)
+function lexicalScopeExample() {
+  let outerVar = "I am an outer variable";
+
+  function innerFunction() {
+    console.log(outerVar); // Output: I am an outer variable
+  }
+
+  return innerFunction;
+}
+
+let closure = lexicalScopeExample();
+closure();
