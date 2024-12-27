@@ -1,0 +1,49 @@
+// Navigator Properties
+// Navigator Properties
+
+// Get the user agent string
+let userAgent = window.navigator.userAgent;
+console.log("User Agent: " + userAgent);
+// Output: User Agent: [user agent string]
+
+// Get the platform
+let platform = window.navigator.platform;
+console.log("Platform: " + platform);
+// Output: Platform: [platform]
+
+// Check if cookies are enabled
+let cookiesEnabled = window.navigator.cookieEnabled;
+console.log("Cookies Enabled: " + cookiesEnabled);
+// Output: Cookies Enabled: [true/false]
+
+// Get the language of the browser
+let language = window.navigator.language;
+console.log("Language: " + language);
+// Output: Language: [language]
+
+// Get the online status of the browser
+let onlineStatus = window.navigator.onLine;
+console.log("Online Status: " + onlineStatus);
+// Output: Online Status: [true/false]
+
+
+
+// Navigator Methods
+
+// Navigator Methods
+
+// Vibrate the device (if supported)
+window.navigator.vibrate(200); // Vibrate for 200 milliseconds
+
+// Get the geolocation of the device (if supported and permitted)
+window.navigator.geolocation.getCurrentPosition(
+  function(position) {
+    console.log("Latitude: " + position.coords.latitude);
+    console.log("Longitude: " + position.coords.longitude);
+  },
+  function(error) {
+    console.error("Error getting geolocation: " + error.message);
+  }
+);
+
+
